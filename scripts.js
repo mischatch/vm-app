@@ -38,9 +38,29 @@ $(function() {
     $('.table').last().children().first().next().remove(); // removing first row
   });
 
+
   $( "#sortable1, #sortable2" ).sortable({
+    items: '#make-drag',
     connectWith: '.table',
+    activate: () => {
+      $( "#sortable1, #sortable2, #make-drag" ).css({
+        'background-color': 'rgba(255, 202, 0, 0.2)',
+      });
+    },
+    deactivate: () => {
+      $( "#sortable1, #sortable2, #make-drag" ).css({
+        'background-color': ''
+      });
+    }
   }).disableSelection();
+
+  $("#make-drag").draggable({
+    revert: true,
+    fixed: true
+  });
+
+
+  $('.table__header').draggable({'revert': 'invalid' });
 
 
 

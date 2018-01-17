@@ -10,6 +10,7 @@ body {
 main {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .two-searches {
@@ -40,6 +41,10 @@ main {
     background-color: white;
 }
 
+.tables {
+  display: flex;
+  justify-content: space-between;
+}
 
 
 .table {
@@ -82,4 +87,9 @@ main {
 #make-drag:hover {
   cursor: pointer;
   background-color: rgba(224, 57, 57, 0.3);
+}
+
+.ui-drop-hover {
+  background-color: #FFFF55;
+  border: 2px solid #bbb;
 }
