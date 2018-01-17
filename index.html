@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vaynermedia Front End Code Test</title>
+
+    <link rel='stylesheet' href='https://necolas.github.io/normalize.css/7.0.0/normalize.css' />
+    <link rel='stylesheet' href='styles.css' />
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+    <script src='scripts.js'></script>
+</head>
+
+<body>
+    <h1>Vaynermedia Front-End Code Test</h1>
+
+    <div class="two-searches">
+
+      <div class='search'>
+        <label class='search__label'>Search</label>
+        <input class='search__input1' onkeyup="search('search__input1')" type='text' placeholder="Input album name or ID"></input>
+        <!-- got rid of submit button in both cases, not it's a life serach  -->
+        <!-- <button class='search__button' type='submit'>Submit</button> -->
+      </div>
+
+      <div class='search'>
+        <label class='search__label'>Search</label>
+        <input class='search__input2' onkeyup="search('search__input2')" type='text' placeholder="Input album name or ID"></input>
+        <!-- <button class='search__button' type='submit'>Submit</button> -->
+      </div>
+    </div>
+
+    <main>
+
+        <div id='sortable1' class='table'>
+            <div class='table__header'>
+                <div class='table__cell table__cell--short'>id</div>
+                <div class='table__cell'>title</div>
+            </div>
+            <div id='make-drag' class='table__row'>
+                <div class='table__cell table__cell--short'>{{ID}}</div>
+                <div class='table__cell table__cell'>{{TITLE}}</div>
+            </div>
+        </div>
+
+
+        <div id='sortable2' class='table'>
+            <div class='table__header'>
+                <div class='table__cell table__cell--short'>id</div>
+                <div class='table__cell'>title</div>
+            </div>
+            <div id='make-drag' class='table__row'>
+                <div class='table__cell table__cell--short'>{{ID}}</div>
+                <div class='table__cell table__cell'>{{TITLE}}</div>
+            </div>
+        </div>
+
+        <div class="">
+          <h3>search</h3>
+          <input type="text" class="search_user" onkeyup="searchUser()"></input>
+          
+        </div>
+
+    </main>
+</body>
+
+</html>

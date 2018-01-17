@@ -1,0 +1,85 @@
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    padding: 0 50px;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    color: #293552;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-searches {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.search {
+    padding-bottom: 30px;
+}
+.search__label {
+    font-weight: bold;
+    font-size: 18px;
+}
+.search input {
+    padding: 5px;
+    border: 1px solid #596b82;
+    width: 300px;
+    margin-left: 20px;
+    border-radius: 3px;
+}
+.search__button{
+    display: inline-block;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #868ea0;
+    background-color: white;
+}
+
+
+
+.table {
+    width: 48%;
+    border: 1px solid #868ea0;
+    background-color: white;
+    height: 100%;
+}
+.table__header {
+    background-color: #232f46;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    display: flex;
+}
+
+.table__row {
+    display: flex;
+    padding: 5px;
+    border: 1px solid #868ea0;
+    margin: 4px;
+    background-color: white;
+}
+
+.table__row:nth-child(2n+1) {
+  background-color: rgba(255, 164, 84, 0.3);
+}
+
+.table__cell {
+    margin-right: 10px;
+}
+.table__cell--short {
+    flex-shrink: 0;
+    width: 50px;
+}
+.table__cell:last-child {
+    margin-right: 0px;
+}
+
+#make-drag:hover {
+  cursor: pointer;
+  background-color: rgba(224, 57, 57, 0.3);
+}
