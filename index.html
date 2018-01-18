@@ -19,7 +19,7 @@
       <div class='search'>
         <label class='search__label'>Search</label>
         <input class='search__input1' onkeyup="search('search__input1')" type='text' placeholder="Input album name or ID"></input>
-        <!-- got rid of submit button in both cases, not it's a life serach  -->
+        <!-- got rid of submit button in both cases, now it's a life search  -->
         <!-- <button class='search__button' type='submit'>Submit</button> -->
       </div>
 
@@ -34,11 +34,11 @@
       <div class="tables">
 
         <div id='sortable1' class='table'>
-          <div class='table__header'>
+          <div class='tableheader'>
             <div class='table__cell table__cell--short'>id</div>
             <div class='table__cell'>title</div>
           </div>
-          <div id='make-drag' class='table__row'>
+          <div id='make-drag' class='table-row'>
             <div class='table__cell table__cell--short'>{{ID}}</div>
             <div class='table__cell table__cell'>{{TITLE}}</div>
           </div>
@@ -46,15 +46,16 @@
 
 
         <div id='sortable2' class='table'>
-          <div class='table__header'>
+          <div class='tableheader'>
             <div class='table__cell table__cell--short'>id</div>
             <div class='table__cell'>title</div>
           </div>
-          <div id='make-drag' class='table__row'>
+          <div id='make-drag' class='table-row'>
             <div class='table__cell table__cell--short'>{{ID}}</div>
             <div class='table__cell table__cell'>{{TITLE}}</div>
           </div>
         </div>
+
       </div>
 
     </main>
