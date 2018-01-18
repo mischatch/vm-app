@@ -1,16 +1,16 @@
 body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    padding: 0 50px;
-    background-color: #EFEFEF;
-    display: flex;
-    flex-direction: column;
-    color: #293552;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  padding: 0 50px;
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  color: #293552;
 }
 
 main {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .two-searches {
@@ -20,25 +20,25 @@ main {
 }
 
 .search {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 .search__label {
-    font-weight: bold;
-    font-size: 18px;
+  font-weight: bold;
+  font-size: 18px;
 }
 .search input {
-    padding: 5px;
-    border: 1px solid #596b82;
-    width: 300px;
-    margin-left: 20px;
-    border-radius: 3px;
+  padding: 5px;
+  border: 1px solid #596b82;
+  width: 300px;
+  margin-left: 20px;
+  border-radius: 3px;
 }
 .search__button{
-    display: inline-block;
-    height: 30px;
-    padding: 5px;
-    border: 1px solid #868ea0;
-    background-color: white;
+  display: inline-block;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #868ea0;
+  background-color: white;
 }
 
 .tables {
@@ -48,25 +48,25 @@ main {
 
 
 .table {
-    width: 48%;
-    border: 1px solid #868ea0;
-    background-color: white;
-    height: 100%;
+  width: 48%;
+  border: 1px solid #868ea0;
+  background-color: white;
+  height: 100%;
 }
 .tableheader {
-    background-color: #232f46;
-    font-weight: bold;
-    color: white;
-    padding: 10px;
-    display: flex;
+  background-color: #232f46;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  display: flex;
 }
 
 .table-row {
-    display: flex;
-    padding: 5px;
-    border: 1px solid #868ea0;
-    margin: 4px;
-    background-color: white;
+  display: flex;
+  padding: 5px;
+  border: 1px solid #868ea0;
+  margin: 4px;
+  background-color: white;
 }
 
 .table-row:nth-child(2n+1) {
@@ -74,17 +74,28 @@ main {
 }
 
 .table__cell {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .table__cell--short {
-    flex-shrink: 0;
-    width: 50px;
+  flex-shrink: 0;
+  width: 50px;
 }
 .table__cell:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 #make-drag:hover {
   cursor: pointer;
   background-color: rgba(224, 57, 57, 0.3);
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: 1px solid #336666;
+  background: #32646b url(images/ui-bg-1.png) 50% 50% repeat-x;
+  font-weight: bold;
+  color: #fff;
+}
+
+.ui-state-default {
+  background: red;
 }
